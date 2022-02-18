@@ -26,7 +26,9 @@
 >...
 >
 >let cman = new CookiesMan()
+>
 >let value = cman.cooks(cookiename)
+>
 >console.log(value) //log the value ;)
 >
 >
