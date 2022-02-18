@@ -4,7 +4,7 @@
 
 ###example
 >...
-><script src='/pathtocookiesman'\>
+><script src='/pathtocookiesman' \>
 >
 ></script\>
 ><script\>
