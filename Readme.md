@@ -1,8 +1,8 @@
-#CookiesMan
-##perform easily actions on cookies from the front side..
+# CookiesMan
+## perform easily actions on cookies from the front side..
 
 
-###example
+### example
 
 
 
@@ -16,7 +16,7 @@
 *Set a value to a cookie | Assigner une valeur a un cookie*
 >...
 >
->CookiesMan.addCook("unCookie","saValeur")
+>CookiesMan.setCookie("unCookie","saValeur")
 >
 >
 >...
@@ -27,7 +27,7 @@
 >
 >let cman = new CookiesMan()
 >
->let value = cman.cooks(cookiename)
+>let value = cman.cooks()['cookiename']
 >
 >console.log(value) //log the value ;)
 >
