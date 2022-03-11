@@ -15,7 +15,7 @@ class CookiesMan{
 		document.cookie= `${name}=${val}; expires = Thu, 01 Jan 1970 00:00:00 GMT`
 	}
 	setCookie(name,val){
-		CoookiesMan.setCook(name,val)
+		CookiesMan.setCook(name,val)
 	}
 	delCookie(name){
 		CookiesMan.delCook(name)
