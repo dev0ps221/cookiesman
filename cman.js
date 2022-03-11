@@ -1,3 +1,4 @@
+
 class CookiesMan{
 	static _cookies = [] 
 	cookies = []
@@ -14,12 +15,6 @@ class CookiesMan{
 	static delCook(name,val=''){
 		document.cookie= `${name}=${val}; expires = Thu, 01 Jan 1970 00:00:00 GMT`
 	}
-	setCookie(name,val){
-		CookiesMan.setCook(name,val)
-	}
-	delCookie(name){
-		CookiesMan.delCook(name)
-	}
 	retrieveCookies(){
 		return this.objectifyCookies(this.getCookiesArray())
 	}
@@ -31,7 +26,7 @@ class CookiesMan{
 	objectifyCookies(arrs=[]){
 		arrs.forEach(
 			cookie=>{
-				this.Cookie[cookie[0]] = cookie[1]
+				this.Cookie[cookie[0].trim()] = cookie[1]
 			}
 		)
 		return this.Cookie
@@ -52,6 +47,13 @@ class CookiesMan{
 
 
 }
+var CM = CookiesMan
+let Cman = new CookiesMan()
+Cman.setCookie = function(name,val){
 
-
-
+	CM.setCook(name,val)
+}
+Cman.delCookie=(name)=>{
+	CM.delCook(name)
+}
+window.gotCman = true
