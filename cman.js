@@ -24,6 +24,7 @@ class CookiesMan{
 		return this.cookies
 	}
 	objectifyCookies(arrs=[]){
+		this.Cookie={}
 		arrs.forEach(
 			cookie=>{
 				this.Cookie[cookie[0].trim()] = cookie[1]
@@ -36,6 +37,7 @@ class CookiesMan{
 	}
 
 	cooks(){
+		this.retrieveCookies()
 		return this.Cookie
 	}
 
