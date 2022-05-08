@@ -22,6 +22,17 @@
 >...
 
 
+
+*Delete a cookie | Supprimer un cookie*
+>...
+>
+>CookiesMan.delCookie("unCookie")
+>
+>
+>...
+
+
+
 *Get the value of a cookie | Recupèrer la valeur d'un cookie*
 >...
 >
