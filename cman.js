@@ -9,6 +9,12 @@ class CookiesMan{
 	_getCooks(){
 		return this._cookies
 	}
+	getCookie(name){
+		return this.Cookie.hasOwnProperty(name) ? this.Cookie[name] : null
+	}
+	listCookies(){
+		return this.cookiesNames()
+	}
 	static setCook(name,val){
 		document.cookie = `${name}=${val}`
 	}
